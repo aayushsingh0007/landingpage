@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:red;
+    transform: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 80px;
+    background: #1e1e1e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+header .logo{
+    position: relative;
+    max-width:10%;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: rgb(186, 205, 205);
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: burlywood;
+    font-size: 4em;
+    line-height: 1.3em;
+    font-weight: 600;
+    width: 105%;
+}
+
+.content .textBox p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.content .textBox h1 {
+    color: goldenrod;
+    font-weight: 700;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:rgb(6, 73, 76);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .imgBox img {
+    max-width: 410px;
+}
+
+.ro {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.ro li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ro li:hover {
+    transform: translateY(-15px);
+}
+.ro li img {
+    max-width: 135px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon li {
+    list-style: none;
+}
+
+.icon li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+}
